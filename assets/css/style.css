@@ -1,100 +1,236 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 #image{
-    width:450px;
-    height:400px;
-    padding-left: 90px;
-    padding-top: 50px;
-    float: left;
+  width:450px;
+  height:400px;
+  padding-left: 90px;
+  padding-top: 50px;
+  float: left;
+  border-radius: 60%;
 }
 #image1{
-    width:450px;
-    height:450px;
-    padding-right: 20px;
-    padding-top: 110px;
-    float: right;
+  width:450px;
+  height:450px;
+  padding-right: 20px;
+  padding-top: 110px;
+  float: right;
+  border-radius: 60%;
 }
 .boxed{
-    float:right;
-    width: 60%;
-    padding-right: 20px;
-    padding-top:50px;
-    margin-left: 10px;
+  float:right;
+  width: 60%;
+  padding-right: 20px;
+  padding-top:50px;
+  margin-left: 10px;
 
 }
 .boxed1{
-    float:left;
-    width: 60%;
-    padding-left: 100px;
-    margin-right: 10px;
-    margin-top:80px;
+  float:left;
+  width: 60%;
+  padding-left: 100px;
+  margin-right: 10px;
+  margin-top:80px;
 }
 p{
-    text-align: justify;
-    font-family: "Times New Roman", Times, serif;
-    padding-right: 30px;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 30px;
 
 }
 h3{
-    font-family: "Lucida Console", Courier, monospace;
-    font-weight: bold;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
 }
 #serve{
-    margin-top:20px;
-    padding-left: -30%;
-    margin-left: 40%; 
+  margin-top:20px;
+  padding-left: -30%;
+  margin-left: 40%; 
 }
 
 #service{
-    padding-left: 45%;
-    margin-top:100%;   
+  padding-left: 45%;
+  margin-top:103%;   
 }
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-    padding-bottom: -20%;
-    margin-bottom: -10%;
-    bottom: 10px;
-    padding-left: 20%;
-    margin-left: 10%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-  }
-  
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* Style tab links */
-  .tablink {
-    background-color:chocolate;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
-  
-  .tablink:hover {
-    background-color:coral;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: black;
-    display: none;
-    padding: 100px 45%;
-    height: 100%;
-  }
-  
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  padding-bottom: -20%;
+  margin-bottom: -10%;
+  bottom: 10px;
+  padding-left: 20%;
+  margin-left: 10%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color:chocolate;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color:coral;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 200px;
+  height: 100%;
+}
+
+td{
+  cursor: pointer;
+  padding:0;
+  border: 1px solid white;
+  border-radius: 30%;
+  border-collapse: collapse;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  color: chocolate;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:chocolate;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  width: 100%;
+  padding: 2px 2px;
+  margin:auto auto;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  height:500px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.div1 {
+  width: 400px;
+  height: 280px;
+  border: 2px solid chocolate;
+  box-shadow: 20px 20px 50px 10px chocolate inset;
+  float: right;
+  padding:5px;
+  margin-right: 40px;
+  padding-right: 30px;
+}
+
+div ul{
+  padding-top:30px;
+  margin-top:12px;
+}
+div li{
+  padding-top:10px;
+  margin-top:10px;
+}
+
+#type1{
+  width:40%;
+  padding-left:10%; 
+  height: 300px; 
+  float:center;
+
+}

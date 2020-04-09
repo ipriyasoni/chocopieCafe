@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -90,15 +90,26 @@
       
     </div>
     
-    <h3 id="service">SERVICES</h3>
+   <!-- <h3 id="service">SERVICES</h3>
     <button class="tablink" onclick="openPage('TYPE', this, 'chocolate')">TYPE</button>
     <button class="tablink" onclick="openPage('DESCRITPION', this, 'chocolate')" id="defaultOpen">DESCRITPION</button>
     <button class="tablink" onclick="openPage('PRICE', this, 'chocolate')">PRICE</button>
     <button class="tablink" onclick="openPage('TESTINOMIAL', this, 'TESTINOMIAL')">TESTINOMIAL</button>
     
     <div id="TYPE" class="tabcontent">
-      <h3>TYPE</h3>
-      <p>TYPES of coffee</p>
+      <div class="row">
+        <div class="col-12" style="padding-left: 30%;">
+          <table></table>
+            <tbody>
+              <tr>
+                <td>Espresso</td>
+                <td><img src="assets\img\clear-glass-pitcher-with-brown-liquid-inside-3749174.jpg" style="width:100px; height:100px;"></td>
+              </tr>
+            </tbody>
+            </thead>
+          </table>
+        </div>
+      </div>
     </div>
     
     <div id="DESCRITPION" class="tabcontent">
@@ -134,12 +145,141 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
     </script>
+  -->
+<h2 style="text-align:center;padding-left:0%; box-shadow:10px 10px 10px chocolate;" id="service"><b>SERVICES</b></h2>
+
+<div class="container" style="margin-top:50px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="assets\img\half-full-clear-glass-mug-beside-coffee-machine-2878709.jpg" id="type1">
+    <div class="div1"><ul>
+        <li><b>Type:</b>Espresso </li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>180Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets\img\person-holding-saucer-with-mug-of-chocolate-ice-cream-coffee-1169004.jpg" id="type1" style="width:40%;padding-left:10%; height: 300px;float: center;">
+    <div class="div1"><ul>
+        <li><b>Type:</b> Iced Coffee</li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>250Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="assets\img\cup-of-brown-coffee-3551717.jpg" id="type1">
+    <div class="div1" >
+      <ul>
+        <li><b>Type:</b>Cappuccino</li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>160Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul>
+    </div>
+  </div>
     
-    <!-- Optional JavaScript -->
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="assets\img\clear-footed-drinking-glass-filled-with-cappuccino-on-white-1705536.jpg" id="type1">
+    <div class="div1"><ul>
+        <li><b>Type:</b>Frappucino</li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>230Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="assets\img\frappucino-on-clear-glass-cup-162947.jpg" id="type1">
+    <div class="div1"><ul>
+        <li><b>Type:</b>Caramel Frappe</li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>260Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul></div>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="assets\img\white-and-brown-caramel-frappe-on-clear-drinking-glass-214333.jpg" id="type1">
+    <div class="div1"><ul>
+        <li><b>Type:</b> Brown coffee</li>
+        <li><b>Description:</b> 30ml water and 2 spoon coffee</li>
+        <li><b>Price:</b>200Rs</li>
+        <li><b>Testinomial:</b> Provided online</li>
+      </ul></div>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container" style="width:102.6%;margin-left:-1.3%">
+    <p id="caption" style="padding-left: 47%;"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="assets\img\half-full-clear-glass-mug-beside-coffee-machine-2878709.jpg" style="width:100%" onclick="currentSlide(1)" alt="Espresso">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets\img\person-holding-saucer-with-mug-of-chocolate-ice-cream-coffee-1169004.jpg" style="width:100%" onclick="currentSlide(2)" alt="Iced Coffee">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets\img\cup-of-brown-coffee-3551717.jpg" style="width:100%" onclick="currentSlide(3)" alt="Brown Coffee">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets\img\clear-footed-drinking-glass-filled-with-cappuccino-on-white-1705536.jpg" style="width:100%;height:285px;" onclick="currentSlide(4)" alt="Cappuccino">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets\img\frappucino-on-clear-glass-cup-162947.jpg" style="width:100%;height:285px;" onclick="currentSlide(5)" alt="Frappucino">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="assets\img\white-and-brown-caramel-frappe-on-clear-drinking-glass-214333.jpg" style="width:100%" onclick="currentSlide(6)" alt="Caramel Frappe">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   
   </body>
 </html>
