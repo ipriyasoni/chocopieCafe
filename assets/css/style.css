@@ -51,7 +51,10 @@ h3{
 
 #service{
   padding-left: 45%;
-  margin-top:103%;   
+  margin-top:103%;  
+  text-align:center;
+  padding-left:0%; 
+  /*box-shadow:10px 10px 10px chocolate;*/ 
 }
 table {
   font-family: arial, sans-serif;
@@ -216,6 +219,11 @@ img {
   padding:5px;
   margin-right: 40px;
   padding-right: 30px;
+  cursor: pointer;
+}
+
+.div1:hover{
+  background-color: burlywood;
 }
 
 div ul{
@@ -232,5 +240,5 @@ div li{
   padding-left:10%; 
   height: 300px; 
   float:center;
-
+  cursor: pointer;
 }
